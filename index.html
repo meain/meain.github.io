@@ -23,27 +23,52 @@
     <meta name="msapplication-TileImage" content="icon/png/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <style media="screen">
+    <style>
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  width: 100%; }
+
+
     h1{  font-weight: 400; font-weight: 100;}
     span {
       color: grey;
     }
+
     IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto }
+
+    .bg-canvas {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1; }
+
     </style>
   </head>
   <body>
-
+<div>
     <h1 style="font-family: 'Roboto', sans-serif;font-size: 200px;" align="center">*meain<span>*</span></h1>
     <br>
     <h1 style="font-family: 'Roboto', sans-serif;font-size: 20px;" align="center">I do write code at times!</span></h1>
     
+    </div>
 
     <a href="https://github.com/meain">
         <img class = "displayed" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="Github link" style="width:42px;height:42px;border:0;" >
     </a>
 
+    <canvas class="bg-canvas" height="528" id="dots" width="1440"></canvas>
+    <script src="master.js"></script>
   </body>
 </html>
