@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>*meain*</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
     <link rel="apple-touch-icon" sizes="57x57" href="icon/png/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icon/png/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icon/png/apple-icon-72x72.png">
@@ -34,23 +36,22 @@ body {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   width: 100%; }
-
-
-    h1{  font-weight: 400; font-weight: 100;}
+    h1{font-weight: 100;}
     span {
       color: grey;
     }
 
-    .github-link{
-        width: 3%;
+    .social-links{
+        width: 85px;
         margin-left: auto;
         margin-right: auto;
     }
-    IMG.displayed {
-        display: block;
-        margin-left: auto;
-        margin-right: auto }
-
+    .github{
+        float: left;
+    }
+    .email{
+        float: right;
+    }
     .bg-canvas {
         height: 100%;
         left: 0;
@@ -58,19 +59,21 @@ body {
         top: 0;
         width: 100%;
         z-index: -1; }
-
     </style>
   </head>
   <body>
 <div>
-    <h1 style="font-family: 'Roboto', sans-serif;font-size: 200px;" align="center">*meain<span>*</span></h1>
+    <h1 style="font-family: 'Roboto', sans-serif;font-size: 200px; padding-top:5%;" align="center">*meain<span>*</span></h1>
     <br>
-    <h1 style="font-family: 'Roboto', sans-serif;font-size: 20px;" align="center">I do write code at times!</span></h1>
+    <!-- <h1 style="font-family: 'Anonymous pro', sans-serif;font-size: 16px;" align="center">I do write code when I don't feel like sleeping</span></h1> -->
     
     </div>
-    <div class="github-link">
+    <div class="social-links">
         <a href="https://github.com/meain">
-            <img class = "displayed" src="github.png" alt="Github link" style="width:34px;height:34px;border:0;" >
+            <img class = "github" src="github.png" alt="Github" style="width:34px;height:34px;border:0;" >
+        </a>
+        <a href="mailto:abinsimon10@gmail.com">
+            <img class = "email" src="contact.png" alt="Email" style="width:34px;height:34px;border:0;" >
         </a>
     </div>
     <canvas class="bg-canvas" height="528" id="dots" width="1440"></canvas>
