@@ -41,10 +41,15 @@ body {
       color: grey;
     }
 
+    .github-link{
+        width: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
 
     .bg-canvas {
         height: 100%;
@@ -63,11 +68,11 @@ body {
     <h1 style="font-family: 'Roboto', sans-serif;font-size: 20px;" align="center">I do write code at times!</span></h1>
     
     </div>
-
-    <a href="https://github.com/meain">
-        <img class = "displayed" src="github.png" alt="Github link" style="width:34px;height:34px;border:0;" >
-    </a>
-
+    <div class="github-link">
+        <a href="https://github.com/meain">
+            <img class = "displayed" src="github.png" alt="Github link" style="width:34px;height:34px;border:0;" >
+        </a>
+    </div>
     <canvas class="bg-canvas" height="528" id="dots" width="1440"></canvas>
     <script src="master.js"></script>
   </body>
