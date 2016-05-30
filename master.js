@@ -1,4 +1,3 @@
-
 // For right star color change
 var timer
 function randomColor() {
