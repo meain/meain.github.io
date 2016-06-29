@@ -55,11 +55,14 @@ body{
     position: absolute;
     right: 5vw;
     font-size: 20px;
-    cursor: pointer;
+    cursor: none;
 }
 
 a{
     text-decoration: none;
     font-family: "Muli", sans-serif;
     color: rgba(127, 140, 141,1.0);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: none;
 }
