@@ -27,6 +27,7 @@ body{
     width: 100vw;
     z-index: -3;
     cursor: none;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #middlebanner{
@@ -38,18 +39,54 @@ body{
 }
 
 #title{
-    font-size: 70px;
-    font-family: "Martel Sans", sans-serif;
-    color: rgba(44, 62, 80,1.0);
+    font-size: 90px;
+font-family: 'Aclonica', sans-serif;
+    color: rgba(52, 73, 94,1.0);
     line-height: 90%;
     cursor: none;
     display: block;
 }
 
+#m{
+    display: inline-block;
+    transition: color .3s;
+}
+#m:hover{
+    color: rgba(46, 204, 113,1.0);
+}
+#e{
+    display: inline-block;
+    transition: color .3s;
+}
+#e:hover{
+    color: rgba(52, 152, 219,1.0);
+}
+#a{
+    display: inline-block;
+    transition: color .3s;
+}
+#a:hover{
+    color: rgba(155, 89, 182,1.0);
+}
+#i{
+    display: inline-block;
+    transition: color .3s;
+}
+#i:hover{
+    color: rgba(230, 126, 34,1.0);
+}
+#n{
+    display: inline-block;
+    transition: color .3s;
+}
+#n:hover{
+    color: rgba(231, 76, 60,1.0);
+}
+
 #sub{
-    font-size: 40px;
-    font-family: "Muli", sans-serif;
-    color: rgba(52, 73, 94,1.0);
+    font-size: 30px;
+    font-family: 'Poiret One', sans-serif;
+    color: rgba(127, 140, 141,1.0);
     cursor: none;
     display: block;
 }
@@ -57,15 +94,20 @@ body{
 #links{
     position: absolute;
     right: 7vw;
-    font-size: 20px;
+    font-size: 25px;
     cursor: none;
 }
 
 a{
     text-decoration: none;
-    font-family: "Muli", sans-serif;
-    color: rgba(127, 140, 141,1.0);
+    font-size: 20px;
+    font-family: 'Poiret One', sans-serif;
+    color: rgba(189, 195, 199,1.0);
     padding-top: 25px;
     padding-bottom: 25px;
     cursor: none;
+}
+
+a:hover{
+    color: rgba(241, 196, 15,1.0);
 }
