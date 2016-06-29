@@ -1,6 +1,13 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-canvas {
@@ -26,13 +33,7 @@ body{
     position: relative;
     top: 80%;
     transform: translateY(-80%);
-    left: 90px;
-}
-@media (max-width: 992px) {
-    #middlebanner{
-        top: 90%;
-        transform: translateY(-90%);
-  }
+    left: 5vw;
 }
 
 #title{
