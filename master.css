@@ -28,6 +28,12 @@ body{
     transform: translateY(-80%);
     left: 90px;
 }
+@media (max-width: 992px) {
+    #middlebanner{
+        top: 90%;
+        transform: translateY(-90%);
+  }
+}
 
 #title{
     font-size: 70px;
@@ -44,7 +50,7 @@ body{
 
 #links{
     position: absolute;
-    right: 10vw;
+    right: 5vw;
     font-size: 20px;
 }
 
