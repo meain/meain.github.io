@@ -24,8 +24,8 @@ body{
     left: 0;
     height: 100vh;
     width: 100vw;
-    /* background: linear-gradient(-225deg, #3498db 0%, #2980b9 100%); */
     z-index: -3;
+    cursor: none;
 }
 
 #middlebanner{
@@ -41,18 +41,21 @@ body{
     font-family: "Martel Sans", sans-serif;
     color: rgba(44, 62, 80,1.0);
     line-height: 90%;
+    cursor: none;
 }
 
 #sub{
     font-size: 40px;
     font-family: "Muli", sans-serif;
     color: rgba(52, 73, 94,1.0);
+    cursor: none;
 }
 
 #links{
     position: absolute;
     right: 5vw;
     font-size: 20px;
+    cursor: pointer;
 }
 
 a{
