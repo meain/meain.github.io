@@ -40,7 +40,7 @@ body{
 
 #title{
     font-size: 90px;
-font-family: 'Aclonica', sans-serif;
+    font-family: 'Aclonica', sans-serif;
     color: rgba(52, 73, 94,1.0);
     line-height: 90%;
     cursor: none;
@@ -103,8 +103,8 @@ a{
     font-size: 20px;
     font-family: 'Poiret One', sans-serif;
     color: rgba(189, 195, 199,1.0);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     cursor: none;
 }
 
