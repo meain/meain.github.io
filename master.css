@@ -8,6 +8,7 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .bg-canvas {
@@ -29,11 +30,11 @@ body{
 }
 
 #middlebanner{
-    width 100%;
     position: relative;
-    top: 80%;
-    transform: translateY(-80%);
+    top: 90%;
+    transform: translateY(-90%);
     left: 5vw;
+    display: inline-block;
 }
 
 #title{
@@ -42,6 +43,7 @@ body{
     color: rgba(44, 62, 80,1.0);
     line-height: 90%;
     cursor: none;
+    display: block;
 }
 
 #sub{
@@ -49,11 +51,12 @@ body{
     font-family: "Muli", sans-serif;
     color: rgba(52, 73, 94,1.0);
     cursor: none;
+    display: block;
 }
 
 #links{
     position: absolute;
-    right: 5vw;
+    right: 7vw;
     font-size: 20px;
     cursor: none;
 }
