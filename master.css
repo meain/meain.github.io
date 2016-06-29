@@ -1,70 +1,55 @@
-body {
-    height: 100%;
+body{
     margin: 0;
     padding: 0;
-    position: absolute;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    width: 100%;
-    background-color: #000;
-    overflow: hidden;
-}
-span {
-    color: grey;
 }
 
-.github{
-    float: left;
-}
-.email{
-    float: right;
-}
 .bg-canvas {
     height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
     width: 100%;
-    z-index: -1; }
-#contain{
+    left: 0;
+    top: 0;
     position: absolute;
-    top: 50%;
+    z-index: -1;
+}
+
+#fullpage{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(-225deg, #3498db 0%, #2980b9 100%); */
+    z-index: -3;
+}
+
+#middlebanner{
+    width 100%;
+    position: relative;
+    top: 80%;
+    transform: translateY(-80%);
+    left: 90px;
+}
+
+#title{
+    font-size: 60px;
+    font-family: "Martel Sans", sans-serif;
+    color: rgba(44, 62, 80,1.0);
+    line-height: 90%;
+}
+
+#sub{
+    font-size: 30px;
+    font-family: "Muli", sans-serif;
+    color: rgba(52, 73, 94,1.0);
+}
+
+#links{
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 100%;
-    min-width: 100%;
-    background-color: rgba(6,6,6, 0.6);
-    z-index: -2;
+    transform: translateX(-50%);
 }
-#banner{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-bottom: 30px;
-    padding-right: 60px;
-}
-h1{
-    color: white;
-    font-size: 200px;
-    margin: 0;
-}
-a.editor{
-    color: white;
-    font-size: 200px;
-    margin: 0;
+
+a{
     text-decoration: none;
-}
-.social-links{
-    color: rgba(256, 256, 256, 0.5);
-    float: right;
-    margin-top: -40px;
-    margin-right: 150px;
-}
-a.link{
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgba(256, 256, 256, 0.5);
+    color: black;
+    font-family: "Muli", sans-serif;
 }
