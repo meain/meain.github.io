@@ -5,7 +5,6 @@ var color = '#' + Math.random().toString(16).substr(2, 6);
 document.getElementById("right-star").style.color = color;
 clearTimeout(timer);
 timer=setTimeout(clearColor,50);
-console.log(color);
 }
 function clearColor() {
 document.getElementById("right-star").style.color = "grey";
