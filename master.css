@@ -26,7 +26,6 @@ body{
     height: 100vh;
     width: 100vw;
     z-index: -3;
-    cursor: none;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -43,7 +42,6 @@ body{
     font-family: 'Aclonica', sans-serif;
     color: rgba(52, 73, 94,1.0);
     line-height: 90%;
-    cursor: none;
     display: block;
 }
 
@@ -87,7 +85,6 @@ body{
     font-size: 30px;
     font-family: 'Poiret One', sans-serif;
     color: rgba(127, 140, 141,1.0);
-    cursor: none;
     display: block;
 }
 
@@ -95,7 +92,6 @@ body{
     position: absolute;
     right: 7vw;
     font-size: 25px;
-    cursor: none;
 }
 
 a{
@@ -105,7 +101,6 @@ a{
     color: rgba(189, 195, 199,1.0);
     padding-top: 35px;
     padding-bottom: 35px;
-    cursor: none;
 }
 
 a:hover{
