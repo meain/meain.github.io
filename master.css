@@ -200,3 +200,12 @@ a:hover
         display: block;
     }
 }
+
+#dots{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
