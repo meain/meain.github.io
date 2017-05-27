@@ -132,7 +132,7 @@ randomInteger = function(min, max) {
 };
 
 updateParticlesOrigin = function(event) {
-  event.preventDefault();
+  // event.preventDefault();
   particlesOrigin.x = event.pageX;
   particlesOrigin.y = event.pageY;
   addParticle();
