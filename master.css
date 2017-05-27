@@ -38,13 +38,6 @@ body
 
     background-color: rgba(255, 255, 255, .5);
 }
-@media screen and (max-width: 730px)
-{
-    #fullpage
-    {
-        padding: 10px;
-    }
-}
 
 #middlebanner
 {
@@ -66,9 +59,11 @@ body
 
         display: block;
 
-        width: 100%;
+        width: calc(100% - 40px);
 
         text-align: center;
+
+        padding: 20px;
     }
 }
 
