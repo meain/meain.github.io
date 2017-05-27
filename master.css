@@ -12,6 +12,7 @@ body
     height: 100vh;
     margin: 0;
     padding: 0;
+
     border: 0;
 }
 
@@ -39,7 +40,10 @@ body
 }
 @media screen and (max-width: 730px)
 {
-    padding: 10px;
+    #fullpage
+    {
+        padding: 10px;
+    }
 }
 
 #middlebanner
@@ -58,10 +62,13 @@ body
     {
         font-size: 35px;
 
-        text-align: center;
-        width: 100%;
-        display: block;
         left: 0;
+
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
     }
 }
 
@@ -143,6 +150,7 @@ body
 
     position: absolute;
     right: 7vw;
+
     margin-top: -100px;
 }
 @media screen and (max-width: 730px)
@@ -151,9 +159,11 @@ body
     {
         font-size: 35px;
 
-        text-align: center;
-        width: 100%;
         right: 0;
+
+        width: 100%;
+
+        text-align: center;
     }
 }
 
@@ -182,12 +192,14 @@ a:hover
     color: rgba(241, 196, 15,1.0);
 }
 
-.mbreak{
+.mbreak
+{
     display: none;
 }
 @media screen and (max-width: 730px)
 {
-    .mbreak{
+    .mbreak
+    {
         display: block;
     }
 }
