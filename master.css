@@ -131,7 +131,8 @@ body
 
 #sub
 {
-    font-family: 'Poiret One', sans-serif;
+    /* font-family: 'Poiret One', sans-serif; */
+    font-family: consolas,monaco,courier,"courier new",fixed-width;
     font-size: 30px;
 
     display: block;
@@ -164,7 +165,8 @@ body
 
 a
 {
-    font-family: 'Poiret One', sans-serif;
+    /* font-family: 'Poiret One', sans-serif; */
+    font-family: consolas,monaco,courier,"courier new",fixed-width;
     font-size: 20px;
 
     padding-top: 35px;
