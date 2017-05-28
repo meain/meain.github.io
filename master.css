@@ -60,10 +60,9 @@ body
         display: block;
 
         width: calc(100% - 40px);
+        padding: 20px;
 
         text-align: center;
-
-        padding: 20px;
     }
 }
 
@@ -131,8 +130,7 @@ body
 
 #sub
 {
-    /* font-family: 'Poiret One', sans-serif; */
-    font-family: consolas,monaco,courier,"courier new",fixed-width;
+    font-family: consolas,monaco,courier,'courier new',fixed-width;
     font-size: 30px;
 
     display: block;
@@ -142,6 +140,7 @@ body
 
 #links
 {
+    font-family: consolas,monaco,courier,'courier new',fixed-width;
     font-size: 35px;
 
     position: absolute;
@@ -163,8 +162,6 @@ body
 
 a
 {
-    /* font-family: 'Poiret One', sans-serif; */
-    font-family: consolas,monaco,courier,"courier new",fixed-width;
     font-size: 30px;
 
     padding-top: 35px;
@@ -192,11 +189,13 @@ a:hover
     }
 }
 
-#dots{
-    height: 100vh;
-    width: 100vw;
+#dots
+{
     position: absolute;
-    left: 0;
-    top: 0;
     z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
 }
