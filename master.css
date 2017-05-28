@@ -1,23 +1,18 @@
-html
-{
+html {
     width: 100vw;
     height: 100vh;
 }
 
-body
-{
+body {
     overflow: hidden;
-
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-
     border: 0;
 }
 
-#id
-{
+#id {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -27,8 +22,7 @@ body
     height: 100vh;
 }
 
-#fullpage
-{
+#fullpage {
     z-index: -3;
     top: 0;
     left: 0;
@@ -39,8 +33,7 @@ body
     background-color: rgba(255, 255, 255, .5);
 }
 
-#middlebanner
-{
+#middlebanner {
     position: relative;
     top: 90%;
     left: 5vw;
@@ -49,10 +42,9 @@ body
 
     transform: translateY(-90%);
 }
-@media screen and (max-width: 730px)
-{
-    #middlebanner
-    {
+
+@media screen and (max-width: 730px) {
+    #middlebanner {
         font-size: 35px;
 
         left: 0;
@@ -66,81 +58,77 @@ body
     }
 }
 
-#title
-{
+#title {
     font-family: 'Aclonica', sans-serif;
     font-size: 90px;
     line-height: 90%;
 
     display: block;
 
-    color: rgba(52, 73, 94,1.0);
+    color: rgba(52, 73, 94, 1.0);
 }
 
-#m
-{
+#m {
     display: inline-block;
 
     transition: color .3s;
 }
-#m:hover
-{
-    color: rgba(46, 204, 113,1.0);
+
+#m:hover {
+    color: rgba(46, 204, 113, 1.0);
 }
-#e
-{
+
+#e {
     display: inline-block;
 
     transition: color .3s;
 }
-#e:hover
-{
-    color: rgba(52, 152, 219,1.0);
+
+#e:hover {
+    color: rgba(52, 152, 219, 1.0);
 }
-#a
-{
+
+#a {
     display: inline-block;
 
     transition: color .3s;
 }
-#a:hover
-{
-    color: rgba(155, 89, 182,1.0);
+
+#a:hover {
+    color: rgba(155, 89, 182, 1.0);
 }
-#i
-{
+
+#i {
     display: inline-block;
 
     transition: color .3s;
 }
-#i:hover
-{
-    color: rgba(230, 126, 34,1.0);
+
+#i:hover {
+    color: rgba(230, 126, 34, 1.0);
 }
-#n
-{
+
+#n {
     display: inline-block;
 
     transition: color .3s;
 }
-#n:hover
-{
-    color: rgba(231, 76, 60,1.0);
+
+#n:hover {
+    color: rgba(231, 76, 60, 1.0);
 }
 
-#sub
-{
-    font-family: consolas,monaco,courier,'courier new',fixed-width;
+#sub {
+    font-family: consolas, monaco, courier, 'courier new', fixed-width;
     font-size: 30px;
 
     display: block;
 
-    color: rgba(127, 140, 141,1.0);
+    color: rgba(127, 140, 141, 1.0);
 }
 
-#links
-{
-    font-family: consolas,monaco,courier,'courier new',fixed-width;
+#links {
+    font-family: consolas, monaco, courier, 'courier new', fixed-width;
     font-size: 35px;
 
     position: absolute;
@@ -148,10 +136,9 @@ body
 
     margin-top: -50px;
 }
-@media screen and (max-width: 730px)
-{
-    #links
-    {
+
+@media screen and (max-width: 730px) {
+    #links {
         right: 0;
 
         width: 100%;
@@ -160,37 +147,31 @@ body
     }
 }
 
-a
-{
+a {
     font-size: 30px;
 
     padding-top: 35px;
     padding-bottom: 35px;
 
     text-decoration: none;
-
-    color: rgba(189, 195, 199,1.0);
+    color: rgba(189, 195, 199, 1.0);
 }
 
-a:hover
-{
-    color: rgba(241, 196, 15,1.0);
+a:hover {
+    color: rgba(241, 196, 15, 1.0);
 }
 
-.mbreak
-{
+.mbreak {
     display: none;
 }
-@media screen and (max-width: 730px)
-{
-    .mbreak
-    {
+
+@media screen and (max-width: 730px) {
+    .mbreak {
         display: block;
     }
 }
 
-#dots
-{
+#dots {
     position: absolute;
     z-index: -1;
     top: 0;
