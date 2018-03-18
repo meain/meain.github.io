@@ -1,182 +1,114 @@
-html {
-    width: 100vw;
-    height: 100vh;
-}
-
 body {
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-#id {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 
 #fullpage {
-    z-index: -3;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    background-color: rgba(255, 255, 255, .5);
-}
-
-#middlebanner {
-    position: relative;
-    top: 90%;
-    left: 5vw;
-
-    display: inline-block;
-
-    transform: translateY(-90%);
-}
-
-@media screen and (max-width: 730px) {
-    #middlebanner {
-        font-size: 35px;
-
-        left: 0;
-
-        display: block;
-
-        width: calc(100% - 40px);
-        padding: 20px;
-
-        text-align: center;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #title {
-    font-family: 'Aclonica', sans-serif;
-    font-size: 90px;
-    line-height: 90%;
-
-    display: block;
-
-    color: rgba(52, 73, 94, 1.0);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 90px;
+  line-height: 90%;
+  display: block;
+  color: rgba(52, 73, 94, 1);
 }
 
-#m {
-    display: inline-block;
-
-    transition: color .3s;
+.letter {
+  display: inline-block;
+  transition: color 0.3s;
 }
-
 #m:hover {
-    color: rgba(46, 204, 113, 1.0);
+  color: rgba(46, 204, 113, 1);
 }
-
-#e {
-    display: inline-block;
-
-    transition: color .3s;
-}
-
 #e:hover {
-    color: rgba(52, 152, 219, 1.0);
+  color: rgba(52, 152, 219, 1);
 }
-
-#a {
-    display: inline-block;
-
-    transition: color .3s;
-}
-
 #a:hover {
-    color: rgba(155, 89, 182, 1.0);
+  color: rgba(155, 89, 182, 1);
 }
-
-#i {
-    display: inline-block;
-
-    transition: color .3s;
-}
-
 #i:hover {
-    color: rgba(230, 126, 34, 1.0);
+  color: rgba(230, 126, 34, 1);
 }
-
-#n {
-    display: inline-block;
-
-    transition: color .3s;
-}
-
 #n:hover {
-    color: rgba(231, 76, 60, 1.0);
+  color: rgba(231, 76, 60, 1);
 }
 
+#middlebanner {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
 #sub {
-    font-family: consolas, monaco, courier, 'courier new', fixed-width;
-    font-size: 30px;
-
-    display: block;
-
-    color: rgba(127, 140, 141, 1.0);
+  font-family: consolas, monaco, courier, 'courier new', fixed-width;
+  font-size: 30px;
+  color: rgba(127, 140, 141, 1);
 }
 
 #links {
-    font-family: consolas, monaco, courier, 'courier new', fixed-width;
-    font-size: 35px;
-
-    position: absolute;
-    right: 7vw;
-
-    margin-top: -50px;
+  font-family: consolas, monaco, courier, 'courier new', fixed-width;
+  font-size: 35px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
-
-@media screen and (max-width: 730px) {
-    #links {
-        right: 0;
-
-        width: 100%;
-
-        text-align: center;
-    }
+#links div {
+  padding: 20px;
 }
 
 a {
-    font-size: 30px;
-
-    padding-top: 35px;
-    padding-bottom: 35px;
-
-    text-decoration: none;
-    color: rgba(189, 195, 199, 1.0);
+  font-size: 30px;
+  text-decoration: none;
+  color: rgba(189, 195, 199, 1);
+  padding: 20px 0;
 }
 
 a:hover {
-    color: rgba(241, 196, 15, 1.0);
-}
-
-.mbreak {
-    display: none;
-}
-
-@media screen and (max-width: 730px) {
-    .mbreak {
-        display: block;
-    }
+  color: rgba(241, 196, 15, 1);
 }
 
 #dots {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
-    width: 100vw;
-    height: 100vh;
+@media only screen and (max-width: 700px) {
+    #middlebanner{
+  padding: 10px 10px 30px 10px;
+    }
+  #title {
+    font-size: 55px;
+    text-align: center;
+  }
+  #sub {
+    font-size: 20px;
+    text-align: center;
+  }
+  #links {
+    font-size: 25px;
+  }
+  #links div {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
 }
