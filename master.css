@@ -93,7 +93,7 @@ a:hover {
 
 @media only screen and (max-width: 700px) {
   #middlebanner {
-    padding: 10px 10px 70px 10px;
+    margin-top: unset;
   }
   #title {
     font-size: 55px;
