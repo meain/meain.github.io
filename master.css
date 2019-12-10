@@ -1,7 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: unset;
+    overflow-x: hidden;
+  }
 }
 
 #fullpage {
@@ -20,7 +31,7 @@ body {
 }
 
 #title {
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Aclonica", sans-serif;
   font-size: 90px;
   line-height: 90%;
   display: block;
@@ -50,17 +61,16 @@ body {
 #middlebanner {
   width: 100%;
   padding: 30px;
-  box-sizing: border-box;
   margin-top: auto;
 }
 #sub {
-  font-family: consolas, monaco, courier, 'courier new', fixed-width;
+  font-family: consolas, monaco, monospace, fixed-width;
   font-size: 30px;
   color: rgba(127, 140, 141, 1);
 }
 
 #links {
-  font-family: consolas, monaco, courier, 'courier new', fixed-width;
+  font-family: consolas, monaco, monospace, fixed-width;
   font-size: 35px;
   margin-top: 50px;
   display: flex;
