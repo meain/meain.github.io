@@ -156,28 +156,27 @@ updateParticlesOrigin = function(event) {
   addParticle()
 }
 
-canvas.width = document.body.clientWidth
-
-canvas.height = document.body.clientHeight
-
-devicePixelRatio = window.devicePixelRatio || 1
-
-backingStoreRatio = context.webkitBackingStorePixelRatio || context.backingStorePixelRatio || 1
-
-ratio = devicePixelRatio / backingStoreRatio
-
-if (devicePixelRatio !== backingStoreRatio) {
-  oldWidth = canvas.width
-  oldHeight = canvas.height
-  canvas.width = oldWidth * ratio
-  canvas.height = oldHeight * ratio
-  canvas.style.width = oldWidth + 'px'
-  canvas.style.height = oldHeight + 'px'
-  context.scale(ratio, ratio)
+resize = function(){
+  canvas.width = document.body.clientWidth
+  canvas.height = document.body.clientHeight
+  devicePixelRatio = window.devicePixelRatio || 1
+  backingStoreRatio = context.webkitBackingStorePixelRatio || context.backingStorePixelRatio || 1
+  ratio = devicePixelRatio / backingStoreRatio
+  if (devicePixelRatio !== backingStoreRatio) {
+    oldWidth = canvas.width
+    oldHeight = canvas.height
+    canvas.width = oldWidth * ratio
+    canvas.height = oldHeight * ratio
+    canvas.style.width = oldWidth + 'px'
+    canvas.style.height = oldHeight + 'px'
+    context.scale(ratio, ratio)
+  }
 }
+resize()
+
 
 document.addEventListener('mousemove', updateParticlesOrigin)
-
 document.addEventListener('touchmove', updateParticlesOrigin)
+window.addEventListener("resize", resize);
 
 animationLoop()
