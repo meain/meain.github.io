@@ -123,3 +123,18 @@ a:hover {
     padding: 5px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  #fullpage {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #title {
+    color: #607d8b;
+  }
+}
