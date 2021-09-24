@@ -189,6 +189,7 @@ animationLoop();
 function getRnd(min, max) {
   return Math.random() * (max - min) + min;
 }
+const autoInterval = canvas.width < 1000 ? 100 : 200;
 setInterval(() => {
   particlesOrigin.x = getRnd(
     0 + canvas.width / 8,
@@ -199,4 +200,4 @@ setInterval(() => {
     canvas.height - canvas.width / 8
   );
   addParticle();
-}, 200);
+}, autoInterval);
