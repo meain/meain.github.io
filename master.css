@@ -54,3 +54,13 @@ a:hover {
     font-size: 1rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  #middlebanner {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+}
