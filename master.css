@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 body {
@@ -8,91 +9,32 @@ body {
   margin: 0;
   overflow: hidden;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    overflow: unset;
-    overflow-x: hidden;
-  }
-}
-
-#fullpage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#title {
-  font-family: "Aclonica", sans-serif;
-  font-size: 90px;
-  line-height: 90%;
-  display: block;
-  color: rgba(52, 73, 94, 1);
-}
-
-.letter {
-  display: inline-block;
-  transition: color 0.3s;
-}
-#m:hover {
-  color: rgba(46, 204, 113, 1);
-}
-#e:hover {
-  color: rgba(52, 152, 219, 1);
-}
-#a:hover {
-  color: rgba(155, 89, 182, 1);
-}
-#i:hover {
-  color: rgba(230, 126, 34, 1);
-}
-#n:hover {
-  color: rgba(231, 76, 60, 1);
-}
 
 #middlebanner {
-  width: 100%;
-  padding: 30px;
-  margin-top: auto;
-}
-#sub {
-  font-family: consolas, monaco, monospace, fixed-width;
-  font-size: 30px;
-  color: rgba(127, 140, 141, 1);
-}
-
-#links {
-  font-family: consolas, monaco, monospace, fixed-width;
-  font-size: 35px;
-  margin-top: 50px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 50px;
 }
-#links div {
-  padding: 20px;
+#title {
+  font-weight: bold;
+  font-size: 10rem;
+  margin-bottom: -25px;
 }
-
+#links {
+  font-size: 2rem;
+}
 a {
-  font-size: 30px;
+  color: rgba(127, 140, 141, 1);
   text-decoration: none;
-  color: rgba(189, 195, 199, 1);
-  padding: 20px 0;
 }
-
 a:hover {
   color: rgba(241, 196, 15, 1);
 }
-
 #dots {
   position: absolute;
   z-index: -1;
@@ -103,38 +45,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  #middlebanner {
-    margin-top: unset;
-  }
   #title {
-    font-size: 55px;
-    text-align: center;
-  }
-  #sub {
-    font-size: 20px;
-    text-align: center;
+    font-weight: bold;
+    font-size: 7rem;
+    margin-bottom: -5px;
   }
   #links {
-    font-size: 25px;
-  }
-  #links div {
-    text-align: center;
-    width: 100%;
-    padding: 5px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  #fullpage {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  #title {
-    color: #607d8b;
+    font-size: 1rem;
   }
 }
