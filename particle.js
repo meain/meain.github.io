@@ -191,12 +191,12 @@ function getRnd(min, max) {
 }
 setInterval(() => {
   particlesOrigin.x = getRnd(
-    0 + canvas.width / 4,
-    canvas.width - canvas.width / 4
+    0 + canvas.width / 8,
+    canvas.width - canvas.width / 8
   );
   particlesOrigin.y = getRnd(
-    0 + canvas.width / 4,
-    canvas.height - canvas.width / 4
+    0 + canvas.width / 8,
+    canvas.height - canvas.width / 8
   );
   addParticle();
-}, 500);
+}, 200);
