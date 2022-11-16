@@ -68,3 +68,9 @@ a:hover {
 .center {
   text-align: center;
 }
+.full-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
