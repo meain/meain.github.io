@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
+  background-image: radial-gradient(white, #0000);
 }
 #title {
   font-weight: bold;
@@ -31,6 +32,7 @@ body {
 a {
   color: rgba(127, 140, 141, 1);
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
   color: rgba(241, 196, 15, 1);
